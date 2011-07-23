@@ -1,6 +1,8 @@
-CREATE DATABASE ##DB_DBNAME##; 
+CREATE DATABASE `##DB_DBNAME##`; 
 
-CREATE TABLE IF NOT EXISTS `changelog` (
+USE `##DB_DBNAME##`;
+
+CREATE TABLE `changelog` (
   change_number BIGINT NOT NULL,
   delta_set VARCHAR(10) NOT NULL,
   start_dt TIMESTAMP NOT NULL,
